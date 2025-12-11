@@ -1,83 +1,73 @@
 export default function Landing() {
   return (
-    <div className="bg-light min-h-screen flex flex-col font-inter">
-      
-      {/* Header */}
-      <header className="w-full p-6 flex justify-between items-center">
-        <h1 className="font-lobster text-4xl text-primary tracking-wide">
-          MAPIN
-        </h1>
+    <div>
+      <nav className="nav">
+        <div className="nav-logo">
+          <img src=".src/components/img/logo.png" alt="" />
+        </div>
 
-        <button
-          onClick={() => (window.location.href = "/login")}
-          className="bg-primary hover:bg-accent transition-all text-white px-6 py-2 rounded-full font-medium"
-        >
-          Login
-        </button>
-      </header>
-
-      {/* Hero Section */}
-      <section className="flex flex-col items-center text-center mt-16 px-4">
-        <h2 className="text-5x1 md:text-8xl font-lobster text-primary mb-4 drop-shadow-sm">
-          Gestão inteligente para sua empresa
-        </h2>
-
-        <p className="text-dark max-w-2xl text-lg md:text-xl opacity-80">
-          O <strong>MAPIN</strong> é uma plataforma inteligente para empresas que desejam
-          controle total sobre seus produtos, categorias, locais e funcionários —
-          com dashboards completos e navegação fluida.
-        </p>
-
-        <button
-          onClick={() => (window.location.href = "/login")}
-          className="mt-8 bg-primary hover:bg-accent transition-all text-white px-10 py-3 rounded-full text-lg font-semibold shadow-md"
-        >
-          Começar agora
-        </button>
-      </section>
-
-      {/* Valores */}
-      <section className="mt-24 px-6 md:px-16">
-        <h3 className="text-3xl font-lobster text-primary mb-10 text-center">
-          Os pilares do MAPIN
-        </h3>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div className="bg-white shadow-md rounded-xl p-6 text-center">
-            <h4 className="text-2xl font-semibold text-dark mb-2">Organização</h4>
-            <p className="opacity-70">Seu estoque em perfeita ordem.</p>
+        <ul className="nav-links">
+          <div className="nav-actions">
+            <li><a href="#" class="nav-actions-text">Recursos</a></li>
+            <li><a href="#" class="nav-actions-text">Plataforma</a></li>
+            <li><a href="#" class="nav-actions-text">Segurança</a></li>
           </div>
 
-          <div className="bg-white shadow-md rounded-xl p-6 text-center">
-            <h4 className="text-2xl font-semibold text-dark mb-2">Produtividade</h4>
-            <p className="opacity-70">Fluxos mais rápidos e eficientes.</p>
+          <div className="nav-actions">
+            <li><a href="/login" className="nav-actions-text nav-login">Entrar</a></li>
+            <li><a href="/login" className="nav-cta">Começar agora</a></li>
           </div>
+        </ul>
+      </nav>
 
-          <div className="bg-white shadow-md rounded-xl p-6 text-center">
-            <h4 className="text-2xl font-semibold text-dark mb-2">Eficiência</h4>
-            <p className="opacity-70">Menos erros, mais resultados.</p>
+      <div className="lading-introduction">
+        <div className="div-card-lading-introduction">
+          <p className="card-lading-introduction">Rastreamente em tempo real</p>
+        </div>
+        <h1 className="titulo-lading-introduction">Gestão inteligente para sua empresa</h1>
+        <p className="descricao-lading-introduction">Monitore, rastreie e gerencie seus ativos em tempo real com a solução empresarial mais avançada do mercado.</p>
+        <div className="action-lading-introduction">
+          <a href="" className="btn-entrar-lading-introduction">Entrar Agora</a>
+          <a href="" className="btn-ver-lading-introduction">Ver Plataforma</a>
+        </div>
+      </div>
+
+      <div className="lading-recursos">
+        <h2 className="titulo-lading-recursos">Recursos poderosos para sua operação</h2>
+        <p className="descricao-lading-recursos">Tudo que você precisa para gerenciar rastreamento e monitoramento em uma única plataforma</p>
+        <div className="div-card-lading-recursos">
+          <div className="card-lading-recursos">
+            <img src="" alt="" />
+            <label>Organização</label>
+            <p>Mantenha produtos, categorias e locais organizados em um só lugar, com controle total e fácil acesso.</p>
+          </div>
+          <div className="card-lading-recursos">
+            <img src="" alt="" />
+            <label>Eficiência</label>
+            <p>Dashboards completos com indicadores reais do seu negócio para decisões mais rápidas e assertivas.</p>
+          </div>
+          <div className="card-lading-recursos">
+            <img src="" alt="" />
+            <label>Agilidade</label>
+            <p>Processos simplificados que economizam tempo e eliminam tarefas repetitivas no dia a dia.</p>
+          </div>
+          <div className="card-lading-recursos">
+            <img src="" alt="" />
+            <label>Integração</label>
+            <p>Conecte todos os setores da empresa em uma plataforma unificada e centralizada.</p>
+          </div>
+          <div className="card-lading-recursos">
+            <img src="" alt="" />
+            <label>Segurança</label>
+            <p>Controle total de acessos com níveis de permissão configuráveis para cada funcionário.</p>
+          </div>
+          <div className="card-lading-recursos">
+            <img src="" alt="" />
+            <label>Gestão de Pessoas</label>
+            <p>Gerencie funcionários e equipes com facilidade, atribuindo responsabilidades e monitorando atividades.</p>
           </div>
         </div>
-      </section>
-
-      {/* Sobre o MAPIN */}
-      <section className="mt-24 px-6 md:px-24 text-center">
-        <h3 className="text-3xl font-lobster text-primary mb-6">
-          O que é o MAPIN?
-        </h3>
-
-        <p className="text-dark text-lg opacity-80 max-w-3xl mx-auto">
-          O MAPIN é um sistema completo para empresas que precisam de controle real
-          sobre produtos, categorias, locais e equipes. Com login para usuário e
-          empresa, dashboards inteligentes, gerenciamento intuitivo e interface
-          moderna, o MAPIN é ideal para negócios que querem evoluir.
-        </p>
-      </section>
-
-      {/* Footer */}
-      <footer className="mt-24 py-6 text-center text-sm opacity-60 text-dark">
-        © {new Date().getFullYear()} MAPIN — Todos os direitos reservados.
-      </footer>
+      </div>
     </div>
   );
 }

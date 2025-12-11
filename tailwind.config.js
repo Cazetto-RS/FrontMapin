@@ -11,6 +11,7 @@ export default {
         second_white: '#D8D8D8',
         black: '#1A1A1A',
         second_black: '#302F2F',
+        third_black: '#494949',
         primary: '#FF2E9A',
         secondary: '#AE035C',
       },
